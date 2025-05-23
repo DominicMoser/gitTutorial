@@ -5,4 +5,5 @@ def log(message:str):
     current_time = now.strftime("%H:%M:%S")
     print( ( ( "|" + current_time ) + ("| " + message) ) )
 
-log("es geht")
+if __name__ == "__main__":
+    log("Script Running")
