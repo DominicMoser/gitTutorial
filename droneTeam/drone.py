@@ -1,6 +1,12 @@
-from djitellopy import Tello
-def getAndInitializeDrone() -> Tello:
-    pass
+totalLeds = 100
+onLeds = 99
 
-def getDistanceFront(drone:Tello)->int:
-    pass
+color = "b"
+
+leds = ""
+for i in range(totalLeds):
+    if i < onLeds:
+       leds += "p"
+    else:
+       leds += "0"
+print(leds)
